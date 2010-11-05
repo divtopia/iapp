@@ -1,0 +1,204 @@
+....loading....
+ 
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+mainCtx.setFillColor is not a function
+[Break on this error] mainCtx.setFillColor (backgroundRed, backgroundGreen, backgroundBlue, 1);
+samples.js (line 383)
+link.localName is null
+[Break on this error] while (link && link.localName.toLowerCase() != "a")
+iphonenav.js (line 41)
+ 	
+URL
+	
+Status
+	
+Domain
+	
+Size
+	
+Timeline
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+Net panel activated. Any requests while the net panel is inactive are not shown.
+ 	
+-
+			
+0KB
+	
+(0KB from cache)
+0ms
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+link.localName is null
+[Break on this error] while (link && link.localName.toLowerCase() != "a")
+iphonenav.js (line 41)
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body onorientationchange="updateOrientation()" linkifying="false" linkified="0" linkifytime="8">
+<h1 id="pageTitle">Patterns</h1>
+<a id="homeButton" class="button" href="#Samples" style="display: inline;">Samples</a>
+<ul id="Samples" title="Samples" style="left: -100%;">
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+</li>
+<li>
+<a href="#Patterns">Design Patterns</a>
+</li>
+<li>
+</li>
+</ul>
+<div id="Console" class="panel" parentname="Samples" title="Console">
+</div>
+<div id="AV" class="panel" parentname="Samples" title="AV Content">
+</div>
+<div id="Fonts" class="panel" parentname="Samples" title="Fonts">
+</div>
+<div id="Text" class="panel" parentname="Samples" title="Text">
+</div>
+<div id="Canvas" class="panel" unloadfunc="canvasUnLoader()" loadfunc="canvasLoader()" parentname="Samples" title="Canvas">
+</div>
+<div id="Documents" class="panel" title="Documents">
+</div>
+<div id="Orientation" class="panel" title="Orientation">
+</div>
+<div id="Keyboards" class="panel" parentname="Hacks" title="Keyboards">
+</div>
+<div id="Integration" class="panel" title="Integration">
+</div>
+<ul id="Buttons" parentname="Samples" title="Buttons">
+</ul>
+<div id="btnHighlight" class="panel" parentname="Buttons" title="Tap Color">
+</div>
+<div id="borderImage" class="panel" parentname="Buttons" title="Border Image">
+</div>
+<div id="bgImage" class="panel" parentname="Buttons" title="BG Image">
+</div>
+<div id="Windows" class="panel" title="Windows" style="left: -100%;">
+<center>
+</center>
+</div>
+<ul id="Patterns" parentname="Samples" title="Patterns" style="left: 0%;" selected="true">
+</ul>
+<ul id="Hacks" parentname="Samples" title="Hacks">
+</ul>
+<ul id="Dynamic" parentname="Patterns" count="5" title="Dynamic List">
+</ul>
+</body>
+</html>
+.roundTD {
+border:2px solid silver;
+}
+.btnTable {
+text-align:center;
+}
+.togButton {
+display:block;
+height:27px;
+margin:8px;
+width:94px;
+}
+.togButtonOn {
+background-image:url("images/on.png");
+}
+.togButtonOff {
+background-image:url("images/off.png");
+}
+.borderImageBtn {
+display:block;
+font:bold 12px/30px Helvetica,sans-serif;
+height:30px;
+margin:0;
+text-align:center;
+text-decoration:none;
+width:110px;
+}
+.blueButton {
+border-left:12px none;
+border-right:12px none;
+color:white;
+text-shadow:0 1px 1px #000000;
+}
+.whiteButton {
+border-left:12px none;
+border-right:12px none;
+color:black;
+text-shadow:0 1px 1px #FFFFFF;
+}
+.blackButton {
+border-left:12px none;
+border-right:12px none;
+color:white;
+text-shadow:0 1px 1px #000000;
+}
+.blackLeftButton {
+border-left:12px none;
+border-right:5px none;
+color:white;
+text-shadow:0 1px 1px #000000;
+}
+.blackRightButton {
+border-left:5px none;
+border-right:12px none;
+color:white;
+text-shadow:0 1px 1px #000000;
+}
+.glossyButton {
+background-color:green;
+background-image:url("images/glossy.png");
+background-repeat:no-repeat;
+border:0 none;
+color:white;
+display:block;
+font:bold 18px/24px Helvetica,sans-serif;
+height:24px;
+padding:6px;
+text-align:center;
+text-decoration:none;
+text-shadow:-2px -2px 1px #000000;
+vertical-align:bottom;
+white-space:nowrap;
+width:43px;
+}
+.noHighlight {
+}
+.moreListItem {
+background:none repeat scroll 0 0 transparent;
+}
+.rrh1 {
+color:#4C566C;
+font-family:Helvetica;
+font-size:17px;
+margin-left:10px;
+margin-top:0;
+}
+li a {
+}
+body > div > ul {
+background-color:white;
+border:1px solid #D9D9D9;
+margin:0 10px 0 0;
+padding:0;
+width:298px;
+}
+body > div > ul > li {
+border-bottom:1px solid #D9D9D9;
+color:black;
+list-style-type:none;
+padding:10px 10px 17px;
+}

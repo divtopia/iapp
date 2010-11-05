@@ -1,0 +1,190 @@
+....loading....
+ 
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+mainCtx.setFillColor is not a function
+[Break on this error] mainCtx.setFillColor (backgroundRed, backgroundGreen, backgroundBlue, 1);
+samples.js (line 383)
+link.localName is null
+[Break on this error] while (link && link.localName.toLowerCase() != "a")
+iphonenav.js (line 41)
+ 	
+URL
+	
+Status
+	
+Domain
+	
+Size
+	
+Timeline
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+Net panel activated. Any requests while the net panel is inactive are not shown.
+ 	
+-
+			
+0KB
+	
+(0KB from cache)
+0ms
+Firebug's log limit has been reached. 0 entries not shown.		Preferences	 
+link.localName is null
+[Break on this error] while (link && link.localName.toLowerCase() != "a")
+iphonenav.js (line 41)
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body onorientationchange="updateOrientation()" linkifying="false" linkified="0" linkifytime="8">
+<h1 id="pageTitle">Windows</h1>
+<a id="homeButton" class="button" href="#Samples" style="display: inline;">Samples</a>
+<ul id="Samples" title="Samples" style="left: -100%;">
+</ul>
+<div id="Console" class="panel" parentname="Samples" title="Console">
+</div>
+<div id="AV" class="panel" parentname="Samples" title="AV Content">
+</div>
+<div id="Fonts" class="panel" parentname="Samples" title="Fonts">
+</div>
+<div id="Text" class="panel" parentname="Samples" title="Text">
+</div>
+<div id="Canvas" class="panel" unloadfunc="canvasUnLoader()" loadfunc="canvasLoader()" parentname="Samples" title="Canvas">
+</div>
+<div id="Documents" class="panel" title="Documents">
+</div>
+<div id="Orientation" class="panel" title="Orientation">
+</div>
+<div id="Keyboards" class="panel" parentname="Hacks" title="Keyboards">
+</div>
+<div id="Integration" class="panel" title="Integration">
+</div>
+<ul id="Buttons" parentname="Samples" title="Buttons">
+</ul>
+<div id="btnHighlight" class="panel" parentname="Buttons" title="Tap Color">
+</div>
+<div id="borderImage" class="panel" parentname="Buttons" title="Border Image">
+</div>
+<div id="bgImage" class="panel" parentname="Buttons" title="BG Image">
+</div>
+<div id="Windows" class="panel" title="Windows" style="left: 0%;" selected="true">
+</div>
+<ul id="Patterns" parentname="Samples" title="Patterns">
+</ul>
+<ul id="Hacks" parentname="Samples" title="Hacks">
+</ul>
+<ul id="Dynamic" parentname="Patterns" count="5" title="Dynamic List">
+</ul>
+</body>
+</html>
+body {
+background:none repeat scroll 0 0 #FFFFFF;
+color:#000000;
+font-family:Helvetica;
+margin:0;
+overflow:hidden;
+}
+body > h1 {
+background:url("iPhoneToolbar.png") repeat-x scroll 0 0 #7388A5;
+border-bottom:1px solid #3F4E63;
+color:#FFFFFF;
+font-size:20px;
+font-weight:bold;
+line-height:20px;
+margin:0;
+padding:10px;
+text-align:center;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+.button {
+background:none repeat scroll 0 0 transparent;
+border-width:0 8px;
+color:#FFFFFF;
+font-size:12px;
+font-weight:bold;
+height:28px;
+line-height:28px;
+padding:0;
+position:absolute;
+right:6px;
+text-decoration:none;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.6);
+top:7px;
+}
+#homeButton {
+border-width:0 8px 0 14px;
+display:none;
+left:6px;
+right:auto;
+top:6px;
+}
+.goButton {
+}
+body > div, body > form, body > ul {
+display:none;
+left:0;
+margin:0;
+min-height:418px;
+padding:0;
+position:absolute;
+top:41px;
+width:100%;
+}
+body > [selected="true"] {
+display:block;
+}
+body > ul > li {
+background:url("iPhoneArrow.png") no-repeat scroll right center transparent;
+border-bottom:1px solid #E0E0E0;
+font-size:20px;
+font-weight:bold;
+list-style:none outside none;
+margin:0;
+padding:0;
+}
+body > ul > li > a {
+color:inherit;
+display:block;
+padding:8px 32px 8px 8px;
+text-decoration:none;
+}
+.panel {
+background:url("pinstripes.png") repeat scroll 0 0 #C8C8C8;
+padding:10px;
+}
+.dialog {
+background:none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+min-height:468px;
+padding:0;
+position:absolute;
+text-align:right;
+top:0;
+width:100%;
+z-index:2;
+}
+fieldset {
+background:url("iPhoneToolbar.png") repeat-x scroll 0 0 #7388A5;
+border:medium none;
+margin:0;
+padding:10px 6px;
+width:100%;
+}
+fieldset > h1 {
+color:#FFFFFF;
+font-size:20px;
+font-weight:bold;
+margin:0 10px;
+padding:0;
+text-align:center;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.6);
+}
+label {
+color:#BBBBBB;
+font-size:14px;
+margin:14px 0 0 6px;
+position:absolute;
+}
+input {
+font-size:16px;
+font-weight:normal;
+margin:6px 0 0;
+padding:6px 6px 6px 44px;
+width:100%;
+}

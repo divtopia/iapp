@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+	<title>iPhone Samples</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+	 <link rel="apple-touch-icon" href="http://groupaware.mobi/iphone/images/apple-touch-icon.png">	
+
+	<style type="text/css" media="screen">@import "iphonenav.css";</style>
+	<style type="text/css" media="screen">@import "samples.css";</style>
+	<script type="text/javascript" language="javascript" src="iPhone%20Samples_files/iphonenav.js"></script>
+	<script type="text/javascript" language="javascript" src="iPhone%20Samples_files/samples.js"></script>
+	<script type="text/javascript" language="javascript" src="iPhone%20Samples_files/canvasProgress.js"></script>
+</head><body linkifytime="8" linkified="0" linkifying="false" onorientationchange="updateOrientation()">
+    <h1 id="pageTitle">Samples</h1>
+    <a style="display: none;" id="homeButton" class="button" href="#Samples">Samples</a>
+    <!-- <a class="button" href="#searchForm">Search</a> -->
+    <ul selected="true" style="left: 0%;" id="Samples" title="Samples">
+        <li><a href="#Windows">Windows</a></li>
+        <li><a href="#Buttons">Buttons</a></li>
+        <li><a href="#Canvas">Canvas</a></li>
+        <li><a href="#Fonts">Fonts</a></li>
+        <li><a href="#Text">Text</a></li>
+        <li><a href="#Orientation">Orientation Hooks</a></li>
+        <li><a href="#Console">Debug Console</a></li>
+        <li><a href="#Integration">iPhone App Integration</a></li>
+        <li><a href="#Documents">Non-HTML Documents</a></li>       
+        <li><a href="#AV">Audio/Video Content</a></li>       
+		<li><a href="#Patterns">Design Patterns</a></li>
+		<li><a href="#Hacks">Hacks</a></li>
+    </ul>
+	<div id="Console" class="panel" title="Console" parentname="Samples">
+	 	<center>
+			<h3>console[.log,.warn,.error]()</h3>
+			<p><small>Turn on Debug Console in Safari Preferences<br>then click a button below</small></p>
+				<p><a class="borderImageBtn whiteButton" href="#" onclick="window.console.log('This is a log!')">Generate a log</a></p>
+				<p><a class="borderImageBtn whiteButton" href="#" onclick="window.console.warn('This is warning!')">Generate warning</a></p>
+				<p><a class="borderImageBtn whiteButton" href="#" onclick="window.console.error('This is an error!')">Generate an error</a></p>
+    	</center>
+	</div>
+	<div id="AV" class="panel" title="AV Content" parentname="Samples">
+	 	<center>
+			<h3>Audio Files</h3>
+				<p><a class="borderImageBtn whiteButton" onclick="window.location.href = 'audio/Audio.aif'" href="#">.AIF</a>
+				<a class="borderImageBtn whiteButton" onclick="window.location.href = 'audio/Audio.wav'">.WAV</a>
+				<a class="borderImageBtn whiteButton" onclick="window.location.href = 'audio/Audio.mov'">.MOV</a>
+				<a class="borderImageBtn whiteButton" onclick="window.location.href = 'audio/Audio.mp3'">.MP3</a></p>
+			<h3>Video</h3>
+				<p><a class="borderImageBtn whiteButton" onclick="window.location.href = 'audio/movie.html'" href="#">QuickTime</a></p>
+    	</center>
+	</div>
+	<div id="Fonts" class="panel" title="Fonts" parentname="Samples">
+	 	<center>
+			<button style="height: 40px; width: 40px; font-size: 17px;" id="p" onclick="minusSize()">-</button>
+			<span id="font_bucket" style="font-size: 20px;">&nbsp;Gorgeous?&nbsp;</span>
+			<button mysize="17" style="height: 40px; width: 40px; font-size: 17px;" onclick="plusSize()">+</button>
+		</center>
+	</div>
+	<div id="Text" class="panel" title="Text" parentname="Samples">
+	 	<center>
+			<div id="contentArea" contenteditable="true">Start typing monkey-man</div>
+		</center>
+	</div>
+	<div id="Canvas" class="panel" title="Canvas" parentname="Samples" loadfunc="canvasLoader()" unloadfunc="canvasUnLoader()">
+	 	<center>
+			<canvas width="300" height="300" id="main-canvas" class="noHighlight">no canvas support</canvas><br>
+			<button style="height: 40px; width: auto; font-size: 17px;" onclick="animateClick(this);">Animate</button>
+			<button style="height: 40px; width: auto; font-size: 17px;" id="addBtn" onclick="addShape();" disabled="disabled">Add Shape</button>
+		</center>
+	</div>
+	<div id="Documents" class="panel" title="Documents">
+	 	<center>
+			<h3>Natively Supported</h3>
+			<p><a class="borderImageBtn whiteButton" href="#" onclick="window.location.href = 'files/sample.doc'">Word</a>
+			<a class="borderImageBtn whiteButton" href="#" onclick="window.location.href = 'files/sample.xls'">Excel</a></p>
+			<p><a class="borderImageBtn blueButton" href="#" onclick="window.location.href = 'files/iphone.pdf'">PDF</a></p>
+			<p><a class="borderImageBtn blackButton" href="#" onclick="window.location.href = 'files/sample.txt'">Text</a></p>
+			<p><a class="borderImageBtn whiteButton" href="#" onclick="window.location.href = 'files/sample.pages.zip'">Pages</a>
+			<a class="borderImageBtn whiteButton" href="#" onclick="window.location.href = 'files/sample.numbers.zip'">Numbers</a>
+			</p><p><a class="borderImageBtn whiteButton" href="#" onclick="window.location.href = 'files/sample.keynote.zip'">Keynote</a></p>
+    	</center>
+	</div>
+	<div id="Orientation" class="panel" title="Orientation">
+	 	<center>
+			<div id="orientationBucket">
+			</div>
+    	</center>
+	</div>
+	<div id="Keyboards" class="panel" title="Keyboards" parentname="Hacks">
+		<center>
+			<h3>Numbers</h3>
+				<input name="phone" style="width: 200px;" type="text">
+			<h3>Numbers and Punctuation</h3>
+				<input name="zip" style="width: 200px;" type="text">
+			<h3>Standard</h3>
+				<input name="email" style="width: 200px;" type="text">
+   		</center>
+    </div>
+	<div id="Integration" class="panel" title="Integration">
+		<h1 class="rrh1">Maps</h1>
+		<ul>
+			<li onclick="window.location.href = 'http://maps.google.com/maps?q=peets+coffee+san+francisco'">Peets Coffee in the city</li>
+			<li onclick="window.location.href = 'http://maps.google.com/maps?q=1+Infinite+Loop,+Cupertino,+CA+95014'">1 Infinite Loop, Cupertino, CA 95014</li>
+			<li onclick="window.location.href = 'http://maps.google.com/maps?daddr=Santa+Cruz,+CA&amp;saddr=1+infinite+loop,+cupertino,+ca'">Directions Santa Cruz</li>
+		</ul>
+		<h1 class="rrh1" style="padding-top: 10px;">Miscellaneous</h1>
+		<ul>
+			<li onclick="window.location.href = 'tel:+1 (800) 555-1212'">Dial 1 (800) 555-1212</li>
+			<li onclick="window.location.href = 'mailto:foo@example.com?cc=bar@example.com&amp;bcc=bot@example.com&amp;subject=Greetings%20from%20Santa%20Cruz!&amp;body=Wish%20you%20were%20here!'">Create Mail Message</li>
+			<li onclick="window.location.href = 'http://youtube.com/watch?v=EwTZ2xpQwpA'">Open YouTube Video:  EwTZ2xpQwpA</li>
+			<li onclick="window.location.href = 'http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewAlbum?id=266017475'">Open iTunes: Cecilia Bartoli/ Maria</li>
+		</ul>
+    </div>
+    <ul id="Buttons" title="Buttons" parentname="Samples">
+        <li><a href="#borderImage">CSS Border-Image</a></li>
+        <li><a href="#bgImage">CSS Background-Image</a></li>
+        <li><a href="#btnHighlight">Tap Highlight Color</a></li>
+    </ul>
+    	<div id="btnHighlight" class="panel" title="Tap Color" parentname="Buttons">
+		<center>
+		<table class="btnTable">
+			<tbody><tr><td colspan="2" align="center"><strong>-webkit-tap-highlight-color:</strong></td></tr>
+			<tr><td><small>Value</small></td><td><small>Sample</small></td></tr>
+			<tr><td>auto</td><td><a class="borderImageBtn whiteButton" onclick="alert('You Tapped!')" href="#">Normal Button</a></td></tr>
+			<tr><td>rgba(0,0,0,0.0)</td><td><a class="borderImageBtn whiteButton noHighlight" onclick="alert('You Tapped!')" href="#">No Highlight</a></td></tr>
+		</tbody></table>
+		</center>
+    </div> 
+	<div id="borderImage" class="panel" title="Border Image" parentname="Buttons">
+		<center>
+		<table class="btnTable">
+			<tbody><tr><td colspan="2" align="center"><strong>border-image</strong></td></tr>
+			<tr><td><small>Image</small></td><td><small>Result</small></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/blueButton.png"></td><td><a class="borderImageBtn blueButton" href="#">Blue Button</a></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/whiteButton.png"></td><td><a class="borderImageBtn whiteButton" href="#">White Button</a></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/grayButton.png"></td><td><a class="borderImageBtn blackButton" href="#">Black Button</a></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/left.png"></td><td><a class="borderImageBtn blackLeftButton" href="#">Black Left Button</a></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/right.png"></td><td><a class="borderImageBtn blackRightButton" href="#">Black Right Button</a></td></tr>
+		</tbody></table>
+		</center>
+    </div> 
+	<div id="bgImage" class="panel" title="BG Image" parentname="Buttons">
+		<center>
+		<table class="btnTable">
+			<tbody><tr><td colspan="2"><strong>background-image</strong></td></tr>
+			<tr><td><small>Image</small></td><td><small>Result</small></td></tr>
+			<tr><td><img src="iPhone%20Samples_files/glossy.png"></td><td align="center"><a class="glossyButton" href="#">@</a></td></tr>
+			<tr><td clospan="2" align="center"><small>Toggle Buton</small></td></tr>
+			<tr><td colspan="2" align="center"><a class="togButton togButtonOn noHighlight" href="#" onclick="toggleBtn(this);"></a></td></tr>
+		</tbody></table>
+		</center>
+    </div> 
+	<div style="left: -100%;" id="Windows" class="panel" title="Windows">
+	 	<center>
+		<h3>New Windows</h3>
+		<a class="borderImageBtn blueButton" href="#" onclick="showChild();">New Child</a>
+		<a class="borderImageBtn blueButton" href="#" onclick="alert('Position: (' + win.screenX + ', ' + win.screenY + '), Name: ' + win.name);">Show Info</a>
+		<a class="borderImageBtn blueButton" href="#" onclick="if(windowCheck()){ win.close(); }">Close Child</a>
+		<h3>Built-in Dialogs</h3>
+		<a class="borderImageBtn blueButton" href="#" onclick="alert('Hello iPhone');">Alert</a>
+		<a class="borderImageBtn blueButton" href="#" onclick="confirm('Hello iPhone?');">Confirm</a>
+		<a class="borderImageBtn blueButton" href="#" onclick="prompt('Hello...','iPhone!');">Prompt</a>
+    	</center>
+	</div>
+    <ul id="Patterns" title="Patterns" parentname="Samples">
+       <li><a href="#Dynamic">Dynamic Lists</a></li>
+       <li><a href="#" onclick="window.location.href = 'designpatterns/roundrect.html'">Round Rect</a></li>
+       <li><a href="#" onclick="window.location.href = 'designpatterns/edge2edge.html'">Edge to Edge</a></li>
+       <li><a href="#" onclick="window.location.href = 'designpatterns/edge2edge2.html'">Edge to Edge w/ Button</a></li>
+       <li><a href="#" onclick="window.location.href = 'designpatterns/slidingpanels/slidingpanels.html'">Sliding Panels</a></li>
+       <li><a href="#" onclick="window.location.href = 'designpatterns/table/TableView.html'">Sliding List</a></li>
+    </ul>
+    <ul id="Hacks" title="Hacks" parentname="Samples">
+		<li><a href="#" onclick="window.location.href = 'hideAddressbar.html'">Hide Addressbar</a></li>
+		<li><a href="#" onclick="window.location.href = 'longpage.html'">Fixed Top / Bottom</a></li>
+		<li><a href="#Keyboards">Keyboards</a></li>
+	</ul>
+	<ul id="Dynamic" title="Dynamic List" count="5" parentname="Patterns">
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li class="moreListItem" id="moreListItem"><div style="float: right; height: 40px; width: 40px;" id="progressCont"></div><a href="#" onclick="loadMore()" style="color: rgb(36, 112, 216);">5 More please</a></li>
+    </ul>
+  </body></html>
