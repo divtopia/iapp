@@ -48,8 +48,8 @@ function DataKeeping(){
 	var currStat = {
 		key: currdate,
 		usr: {
-			name:'JP',
-			email:'jugga23@gmail.com'
+			name:'JadfasdfaP',
+			email:'jugasdgasdfga2asdf3@gmail.com'
 		},
 		workoutstats: {
 			exerciseset:1,
