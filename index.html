@@ -10,8 +10,15 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 
 	
-	<script type="text/javascript" src="assets/js/jquery-1.4.3.min.js"></script>	
+	<script type="text/javascript" src="assets/js/jquery-1.4.3.min.js"></script>
 	<script src="assets/js/jqtouch/jqtouch.min.js" type="application/x-javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/CookieAdaptor.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/GearsSqliteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/WebKitSqliteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/UserDataStorage.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/js/lchair/adaptors/BlackBerryPersistentStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="assets/js/lchair/Lawnchair.js"></script>
 	<script type="text/javascript" src="assets/js/common.js"></script>
 	
@@ -44,11 +51,12 @@
 			<li><a class="flip" href="#Workout">Begin Workout</a></li>
 		</ul>
 	</div>
+
 	
 	<div id="Workout" class="page">
 		<div class="toolbar">
-			<span class="heading">Today's Workout</span>
-			<a href="#Landing" class="button">HomePage</a>
+			<span class="heading">Workout</span>
+			<a class="button back" href="#">Home</a>
 		</div>
 		<div class="deck">
 			<ul class="rounded">
